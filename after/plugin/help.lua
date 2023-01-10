@@ -4,4 +4,5 @@ function RemindMe()
     print("S-h to beginning of file")
     print("S-g to end of file")
     print("C-o go back from definition")
+    print("K to go to docs")
 end
