@@ -1,4 +1,5 @@
 local cmp = require'cmp'
+local select_opts = {behavior = cmp.SelectBehavior.Select}
 
   cmp.setup({
     snippet = {
@@ -13,10 +14,12 @@ local cmp = require'cmp'
     window = {
       completion = cmp.config.window.bordered(),
       documentation = cmp.config.window.bordered(),
-
-      winhighlight = '',
     },
     mapping = cmp.mapping.preset.insert({
+        ['<C-p>'] = cmp.mapping.select_prev_item(select_opts),
+        ['<C-n>'] = cmp.mapping.select_next_item(select_opts),
+        ['<Tab>'] = cmp.mapping.select_next_item(select_opts),
+        ['<S-Tab>'] = cmp.mapping.select_prev_item(select_opts),
       ['<C-b>'] = cmp.mapping.scroll_docs(-4),
       ['<C-f>'] = cmp.mapping.scroll_docs(4),
       ['<C-Space>'] = cmp.mapping.complete(),
@@ -64,6 +67,3 @@ local cmp = require'cmp'
   -- Set up lspconfig.
   local capabilities = require('cmp_nvim_lsp').default_capabilities()
   -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-  -- require('lspconfig')['<YOUR_LSP_SERVER>'].setup {
-    -- capabilities = capabilities
--- }
