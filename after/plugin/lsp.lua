@@ -1,4 +1,17 @@
 require 'lspconfig'.csharp_ls.setup{}
+require'lspconfig'.clangd.setup{}
+require'lspconfig'.pylsp.setup{
+  settings = {
+    pylsp = {
+      plugins = {
+        pycodestyle = {
+          ignore = {'W391'},
+          maxLineLength = 100
+        }
+      }
+    }
+  }
+}
 require'lspconfig'.sumneko_lua.setup {
   settings = {
     Lua = {
