@@ -10,7 +10,11 @@ return require('packer').startup(function(use)
     use 'ThePrimeagen/harpoon'
     use 'tpope/vim-fugitive'
 
-    use { 'neoclide/coc.nvim', branch = 'release' }
+    use 'neovim/nvim-lspconfig'
+    use 'hrsh7th/nvim-cmp'
+    use 'hrsh7th/cmp-nvim-lsp'
+    use 'williamboman/mason.nvim'
+
 
     use 'jiangmiao/auto-pairs'
     use 'matze/vim-move'

@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["atlas.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\atlas.vim",
+    url = "https://github.com/huyvohcmc/atlas.vim"
+  },
   ["auto-pairs"] = {
     loaded = true,
     path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\auto-pairs",
@@ -83,11 +88,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\base16-vim",
     url = "https://github.com/chriskempson/base16-vim"
-  },
-  ["coc.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\coc.nvim",
-    url = "https://github.com/neoclide/coc.nvim"
   },
   gruvbox = {
     loaded = true,
@@ -103,6 +103,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -123,6 +133,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  tagbar = {
+    loaded = true,
+    path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tagbar",
+    url = "https://github.com/preservim/tagbar"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -148,6 +163,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-godot"] = {
     loaded = true,
