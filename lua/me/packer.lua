@@ -38,4 +38,6 @@ return require('packer').startup(function(use)
     use 'preservim/tagbar'
 
     use 'mbbill/undotree'
+
+    use 'j-hui/fidget.nvim'
 end)

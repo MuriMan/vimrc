@@ -12,7 +12,7 @@ require'lspconfig'.pylsp.setup{
     }
   }
 }
-require'lspconfig'.gdscript.setup{}
+require'fidget'.setup{}
 
 require'lspconfig'.sumneko_lua.setup {
   settings = {
@@ -37,6 +37,8 @@ require'lspconfig'.sumneko_lua.setup {
   },
 }
 
+require 'lspconfig'.gdscript.setup {
+}
 
 --- KEYMAPS ---
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
