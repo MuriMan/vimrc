@@ -37,8 +37,7 @@ require'lspconfig'.sumneko_lua.setup {
   },
 }
 
-require 'lspconfig'.gdscript.setup {
-}
+require 'lspconfig'.gdscript.setup {}
 
 --- KEYMAPS ---
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -81,3 +80,7 @@ vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
     border = "rounded",
 })
 --- KEYMAPS ---
+
+vim.diagnostic.config({
+    virtual_text = false
+})

@@ -18,6 +18,7 @@ return require('packer').startup(function(use)
     use 'ray-x/lsp_signature.nvim'
     use 'williamboman/mason.nvim'
 
+    use 'airblade/vim-gitgutter'
     use 'jiangmiao/auto-pairs'
     use 'matze/vim-move'
     use 'tpope/vim-surround'
@@ -40,4 +41,5 @@ return require('packer').startup(function(use)
     use 'mbbill/undotree'
 
     use 'j-hui/fidget.nvim'
+    use 'folke/trouble.nvim'
 end)
