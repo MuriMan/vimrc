@@ -12,7 +12,6 @@ require'lspconfig'.pylsp.setup{
     }
   }
 }
-require'fidget'.setup{}
 
 require'lspconfig'.sumneko_lua.setup {
   settings = {

@@ -31,12 +31,16 @@ local select_opts = {behavior = cmp.SelectBehavior.Select}
       ['<CR>'] = cmp.mapping.confirm({ select = false }),
   }),
     sources = cmp.config.sources({
-      { name = 'nvim_lsp' },
+      { name = 'nvim_lsp',
+        entry_filter = function(entry, ctx)
+            return require("cmp").lsp.CompletionItemKind.Text ~= entry:get_kind() end 
+    },
+      { name = "path" }
       -- { name = 'luasnip' }, -- For luasnip users.
       -- { name = 'ultisnips' }, -- For ultisnips users.
       -- { name = 'snippy' }, -- For snippy users.
     }, {
-      { name = 'buffer' },
+      -- { name = 'buffer' },
     })
   })
 
