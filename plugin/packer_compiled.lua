@@ -89,6 +89,26 @@ _G.packer_plugins = {
     path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\base16-vim",
     url = "https://github.com/chriskempson/base16-vim"
   },
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
+  ["fidget.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fidget.nvim",
+    url = "https://github.com/j-hui/fidget.nvim"
+  },
   gruvbox = {
     loaded = true,
     path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox",
@@ -104,6 +124,16 @@ _G.packer_plugins = {
     path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
+  ["lsp_signature.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp_signature.nvim",
+    url = "https://github.com/ray-x/lsp_signature.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
@@ -118,6 +148,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-whichkey-setup.lua"] = {
+    loaded = true,
+    path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-whichkey-setup.lua",
+    url = "https://github.com/AckslD/nvim-whichkey-setup.lua"
   },
   ["omnisharp-vim"] = {
     loaded = true,
@@ -143,6 +178,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["trouble.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
   },
   undotree = {
     loaded = true,
@@ -188,6 +228,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-transparent",
     url = "https://github.com/tribela/vim-transparent"
+  },
+  ["vim-which-key"] = {
+    loaded = true,
+    path = "C:\\Users\\Asus\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-which-key",
+    url = "https://github.com/liuchengxu/vim-which-key"
   }
 }
 
