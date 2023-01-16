@@ -1,3 +1,0 @@
-vim.api.nvim_set_hl(0, "GitGutterAdd", { bg = "none" })
-vim.api.nvim_set_hl(0, "GitGutterChange", {bg = "none"})
-vim.api.nvim_set_hl(0, "GitGutterDelete", {bg = "none"})
