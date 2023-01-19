@@ -4,3 +4,5 @@ vim.keymap.set("n", "U", "<C-r>")
 vim.keymap.set("n", "<leader>mi", ":Mason<CR>")
 
 vim.keymap.set("n", "<leader>K", ":lua vim.lsp.buf.hover()<CR>")
+vim.keymap.set("n", "<leader>vs", ":vsplit<CR>")
+vim.keymap.set("n", "<leader>hs", ":split<CR>")
