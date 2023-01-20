@@ -35,6 +35,7 @@ return require('packer').startup(function(use)
     use 'tribela/vim-transparent'
     use 'nvim-treesitter/nvim-treesitter'
     use 'preservim/tagbar'
+    use {'akinsho/bufferline.nvim', tag = "v3.*"}
 
     use 'mbbill/undotree'
 
