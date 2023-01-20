@@ -4,7 +4,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.0',
-        requires = { {'nvim-lua/plenary.nvim'}}
+        requires = { { 'nvim-lua/plenary.nvim' } }
     }
     use 'OmniSharp/omnisharp-vim'
     use 'ThePrimeagen/harpoon'
@@ -33,7 +33,6 @@ return require('packer').startup(function(use)
     use 'morhetz/gruvbox'
     use 'huyvohcmc/atlas.vim'
     use 'tribela/vim-transparent'
-
     use 'nvim-treesitter/nvim-treesitter'
     use 'preservim/tagbar'
 
