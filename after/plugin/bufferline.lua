@@ -7,7 +7,7 @@ require("bufferline").setup{
         diagnostics = 'nvim_lsp',
 
         indicator = {
-            style = "underline"
+            style = "icon"
         },
     }
 }
