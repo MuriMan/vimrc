@@ -8,7 +8,7 @@ vim.cmd [[highlight IndentBlanklineIndent5 guifg=#B16286 gui=nocombine]]
 vim.opt.list = true
 
 require("indent_blankline").setup {
-    char = "┊",
+    -- char = "┊",
     -- space_char_blankline = " ",
 
     char_highlight_list = {
