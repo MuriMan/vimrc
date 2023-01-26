@@ -31,6 +31,7 @@ return require('packer').startup(function(use)
 
     use 'chriskempson/base16-vim'
     use 'Lokaltog/vim-monotone'
+    use 'sainnhe/everforest'
     use 'morhetz/gruvbox'
     use 'huyvohcmc/atlas.vim'
     use 'tribela/vim-transparent'
