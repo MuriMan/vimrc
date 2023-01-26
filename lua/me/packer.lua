@@ -30,6 +30,7 @@ return require('packer').startup(function(use)
     use 'vim-airline/vim-airline-themes'
 
     use 'chriskempson/base16-vim'
+    use 'Lokaltog/vim-monotone'
     use 'morhetz/gruvbox'
     use 'huyvohcmc/atlas.vim'
     use 'tribela/vim-transparent'
