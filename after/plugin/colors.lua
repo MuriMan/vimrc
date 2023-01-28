@@ -1,7 +1,11 @@
 vim.g.gruvbox_improved_warnings = true
 vim.g.gruvbox_italic = true
-vim.cmd.colorscheme("gruvbox")
+vim.g.everforest_enable_italics = 1
+vim.g.everforest_transparent_background = 1
+vim.g.everforest_dim_inactive_windows = 1
+vim.cmd.colorscheme("everforest")
 
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 vim.api.nvim_set_hl(0, "FloatBorder", {bg = "none"})
 vim.api.nvim_set_hl(0, "Pmenu", {bg = "none"})
