@@ -38,6 +38,8 @@ require'lspconfig'.sumneko_lua.setup {
 
 require 'lspconfig'.gdscript.setup {}
 
+require "lspconfig".rust_analyzer.setup{}
+
 --- KEYMAPS ---
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap=true, silent=true }

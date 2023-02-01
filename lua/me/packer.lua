@@ -1,5 +1,3 @@
-vim.cmd [[packadd packer.nvim]]
-
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     use {
@@ -34,7 +32,6 @@ return require('packer').startup(function(use)
     use 'sainnhe/everforest'
     use 'morhetz/gruvbox'
     use 'huyvohcmc/atlas.vim'
-    use 'tribela/vim-transparent'
     use 'nvim-treesitter/nvim-treesitter'
     use 'preservim/tagbar'
     use {'akinsho/bufferline.nvim', tag = "v3.*"}
