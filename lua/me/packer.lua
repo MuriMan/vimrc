@@ -33,8 +33,9 @@ return require('packer').startup(function(use)
     use 'morhetz/gruvbox'
     use 'huyvohcmc/atlas.vim'
     use 'nvim-treesitter/nvim-treesitter'
-    use 'preservim/tagbar'
     use {'akinsho/bufferline.nvim', tag = "v3.*"}
+    use 'preservim/tagbar'
+    use 'preservim/nerdtree'
 
     use 'mbbill/undotree'
 
