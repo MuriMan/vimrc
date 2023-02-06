@@ -37,9 +37,10 @@ return require('packer').startup(function(use)
     use {'akinsho/bufferline.nvim', tag = "v3.*"}
     use 'preservim/tagbar'
     use 'preservim/nerdtree'
-
+    use 'folke/trouble.nvim'
     use 'mbbill/undotree'
 
     use 'j-hui/fidget.nvim'
-    use 'folke/trouble.nvim'
+
+    use 'preservim/vim-pencil'
 end)
