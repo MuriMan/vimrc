@@ -27,6 +27,7 @@ return require('packer').startup(function(use)
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
 
+    use 'pbrisbin/vim-colors-off'
     use 'chriskempson/base16-vim'
     use 'lukas-reineke/indent-blankline.nvim'
     use 'Lokaltog/vim-monotone'
