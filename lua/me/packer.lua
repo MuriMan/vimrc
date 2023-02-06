@@ -20,7 +20,6 @@ return require('packer').startup(function(use)
     use 'matze/vim-move'
     use 'tpope/vim-surround'
     use 'tpope/vim-commentary'
-    use 'lukas-reineke/indent-blankline.nvim'
 
     use 'habamax/vim-godot'
 
@@ -28,6 +27,7 @@ return require('packer').startup(function(use)
     use 'vim-airline/vim-airline-themes'
 
     use 'chriskempson/base16-vim'
+    use 'lukas-reineke/indent-blankline.nvim'
     use 'Lokaltog/vim-monotone'
     use 'sainnhe/everforest'
     use 'morhetz/gruvbox'
