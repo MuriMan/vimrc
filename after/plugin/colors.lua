@@ -1,4 +1,4 @@
-function Color(color)
+function TransColor(color)
     color = color or "everforest"
 
     vim.g.gruvbox_improved_warnings = true
@@ -23,4 +23,18 @@ function Color(color)
     vim.api.nvim_set_hl(0, "SignColumn", { bg = "none" })
 end
 
-Color()
+function NoTransColor(color)
+    color = color or "everforest"
+
+    vim.g.gruvbox_improved_warnings = true
+    vim.g.gruvbox_italic = true
+
+    vim.g.everforest_enable_italics = 1
+    vim.g.everforest_transparent_background = 1
+    vim.g.everforest_dim_inactive_windows = 1
+
+    vim.cmd.colorscheme(color)
+end
+
+
+TransColor()
