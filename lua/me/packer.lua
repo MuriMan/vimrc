@@ -21,6 +21,10 @@ return require('packer').startup(function(use)
     use 'matze/vim-move'
     use 'tpope/vim-surround'
     use 'tpope/vim-commentary'
+    use 'preservim/tagbar'
+    use 'preservim/nerdtree'
+    use 'folke/trouble.nvim'
+    use 'mbbill/undotree'
 
     use 'habamax/vim-godot'
 
@@ -36,10 +40,7 @@ return require('packer').startup(function(use)
     use 'huyvohcmc/atlas.vim'
     use 'nvim-treesitter/nvim-treesitter'
     use {'akinsho/bufferline.nvim', tag = "v3.*"}
-    use 'preservim/tagbar'
-    use 'preservim/nerdtree'
-    use 'folke/trouble.nvim'
-    use 'mbbill/undotree'
+    use 'martinsione/darkplus.nvim'
 
     use 'j-hui/fidget.nvim'
 
