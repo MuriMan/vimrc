@@ -41,6 +41,7 @@ return require('packer').startup(function(use)
     use 'nvim-treesitter/nvim-treesitter'
     use {'akinsho/bufferline.nvim', tag = "v3.*"}
     use 'martinsione/darkplus.nvim'
+    use 'lewis6991/gitsigns.nvim'
 
     use 'j-hui/fidget.nvim'
 
