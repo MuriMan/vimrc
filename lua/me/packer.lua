@@ -10,6 +10,7 @@ return require("packer").startup(function(use)
 	use "nvim-treesitter/nvim-treesitter"
 	use "lukas-reineke/indent-blankline.nvim"
 	use "folke/zen-mode.nvim"
+	use "fladson/vim-kitty"
 
 	-- quality of life
 	use {
@@ -23,6 +24,9 @@ return require("packer").startup(function(use)
 	-- general functionality
 	use "mkitt/tabline.vim"
 	use "folke/trouble.nvim"
+
+	-- pdf
+	use { "lervag/vimtex" }
 
 	-- lsp functionality
 	use "neovim/nvim-lspconfig"
