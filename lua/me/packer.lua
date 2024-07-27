@@ -11,6 +11,7 @@ return require("packer").startup(function(use)
 	use "lukas-reineke/indent-blankline.nvim"
 	use "folke/zen-mode.nvim"
 	use "fladson/vim-kitty"
+	use "xiyaowong/transparent.nvim"
 
 	-- quality of life
 	use {
