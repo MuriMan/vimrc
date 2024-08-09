@@ -12,6 +12,7 @@ return require("packer").startup(function(use)
 	use "folke/zen-mode.nvim"
 	use "fladson/vim-kitty"
 	use "xiyaowong/transparent.nvim"
+	use "jaredgorski/fogbell.vim"
 
 	-- quality of life
 	use {
