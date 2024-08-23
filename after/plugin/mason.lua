@@ -1,5 +1,4 @@
 require("mason").setup({
-	install_root_dir = "F:/MasonLSPs",
 	ui = {
 		border = "rounded"
 	}
