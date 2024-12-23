@@ -28,6 +28,7 @@ lsp.clangd.setup{}
 lsp.jdtls.setup{ cmd = { "jdtls" } }
 lsp.gdscript.setup{}
 lsp.gdshader_lsp.setup{}
+lsp.pyright.setup{}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
