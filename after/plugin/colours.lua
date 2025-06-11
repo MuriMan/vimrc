@@ -31,7 +31,8 @@ function Colour(colour)
 
 	-- set tabline colours
 	vim.cmd [[hi TabLineFill guibg=none guifg=#504945]]
-	vim.cmd[[hi TabLineSel guibg=none, guifg=ebdbb2]]
+	vim.cmd [[hi TabLineSel guibg=none guifg=#FFFFFF]]
+	vim.cmd [[hi ColorColumn guibg=#D1D1D1]]
 end
 
-Colour("gruvbox")
+Colour("fogbell")

@@ -9,6 +9,7 @@ vim.opt.hlsearch = false
 
 vim.opt.nu = true
 vim.opt.rnu = true
+vim.opt.colorcolumn = "80"
 
 vim.wo.wrap = false
 

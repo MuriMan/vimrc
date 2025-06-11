@@ -45,6 +45,6 @@ return require("packer").startup(function(use)
 	use "hrsh7th/cmp-nvim-lsp"
 	use "ray-x/lsp_signature.nvim"
 	use "williamboman/mason.nvim"
-	use "williamboman/mason-lspconfig.nvim"
+	-- use "williamboman/mason-lspconfig.nvim"
 	use "L3MON4D3/LuaSnip"
 end)
