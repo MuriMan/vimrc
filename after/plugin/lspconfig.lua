@@ -23,12 +23,15 @@ local lsp = require("lspconfig")
 -- 		return true
 -- 	end
 -- }
-lsp.csharp_ls.setup {}
-lsp.clangd.setup{}
-lsp.jdtls.setup{ cmd = { "jdtls" } }
-lsp.gdscript.setup{}
-lsp.gdshader_lsp.setup{}
-lsp.pyright.setup{}
+vim.lsp.enable('csharp_ls')
+-- lsp.csharp_ls.setup {}
+-- lsp.clangd.setup{}
+-- lsp.jdtls.setup{ cmd = { "jdtls" } }
+-- lsp.gdscript.setup{}
+-- lsp.gdshader_lsp.setup{}
+-- lsp.pyright.setup{}
+vim.lsp.enable('clangd')
+vim.lsp.enable('pyright')
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
