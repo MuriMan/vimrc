@@ -30,9 +30,24 @@ vim.lsp.enable('csharp_ls')
 -- lsp.gdscript.setup{}
 -- lsp.gdshader_lsp.setup{}
 -- lsp.pyright.setup{}
-vim.lsp.enable('clangd')
+-- vim.lsp.enable('clangd')
 vim.lsp.enable('pyright')
+vim.lsp.config("ccls", {
+	cmd = { "ccls" },
+	root_dir = (function()
+		-- 1. Try to find project markers
+		local markers = { "compile_commands.json", ".ccls", ".git" }
+		local found = vim.fs.find(markers, { upward = true })[1]
 
+		if found then
+			return vim.fs.dirname(found)
+		end
+
+		-- 2. Fallback: Use the directory of the current file
+		return vim.fs.dirname(vim.api.nvim_buf_get_name(0))
+	end)(),
+})
+vim.lsp.enable("ccls")
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)

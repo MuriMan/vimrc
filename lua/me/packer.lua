@@ -22,10 +22,11 @@ return require("packer").startup(function(use)
 	use "tomtom/tcomment_vim"
 	use "preservim/tagbar"
 	use "gcmt/taboo.vim"
+	use "micangl/cmp-vimtex"
 
 	-- general functionality
 	use "mkitt/tabline.vim"
-	use "folke/trouble.nvim"
+	-- use "folke/trouble.nvim"
 	use {
 		'derektata/lorem.nvim',
 		config = function()

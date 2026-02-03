@@ -33,6 +33,7 @@ function Colour(colour)
 	vim.cmd [[hi TabLineFill guibg=none guifg=#504945]]
 	vim.cmd [[hi TabLineSel guibg=none guifg=#FFFFFF]]
 	vim.cmd [[hi ColorColumn guibg=#D1D1D1]]
+	vim.cmd [[hi NormalFloat guibg=none]]
 end
 
 Colour("fogbell")
