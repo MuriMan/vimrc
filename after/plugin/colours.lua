@@ -1,39 +1,39 @@
--- gruvbox configuration
-require("gruvbox").setup({
-	--    terminal_colors = true, -- add neovim terminal colors
-	undercurl = true,
-	underline = true,
-	bold = true,
-	italic = {
-		strings = false,
-		emphasis = true,
-		comments = true,
-		operators = false,
-		folds = true,
-	},
-	strikethrough = true,
-	invert_selection = false,
-	invert_signs = false,
-	invert_tabline = false,
-	invert_intend_guides = false,
-	inverse = true, -- invert background for search, diffs, statuslines and errors
-	contrast = "hard", -- can be "hard", "soft" or empty string
-	palette_overrides = {},
-	overrides = {},
-	dim_inactive = false,
-	transparent_mode = true,
-})
-
 function Colour(colour)
 	colour = colour or "default"
 
 	vim.cmd.colorscheme(colour)
 
-	-- set tabline colours
-	vim.cmd [[hi TabLineFill guibg=none guifg=#504945]]
-	vim.cmd [[hi TabLineSel guibg=none guifg=#FFFFFF]]
-	vim.cmd [[hi ColorColumn guibg=#D1D1D1]]
-	vim.cmd [[hi NormalFloat guibg=none]]
+	vim.o.pumblend = 0
+
+	vim.api.nvim_set_hl(0, "Normal", {bg="none"})
+
+	vim.api.nvim_set_hl(0, "Tabline", {bg="none", fg="#504945"})
+	vim.api.nvim_set_hl(0, "TablineFill", {bg="none", fg="#504945"})
+	vim.api.nvim_set_hl(0, "TablineSel", {bg="none", fg="#FFFFFF", bold = true})
+
+	vim.api.nvim_set_hl(0, "Pmenu", {bg="none"})
+	vim.api.nvim_set_hl(0, "PmenuSel", {bg="none", italic = true, bold = true})
+
+	vim.api.nvim_set_hl(0, "MiniPickNormal", {bg="none"})
+	vim.api.nvim_set_hl(0, "MiniPickMatchCurrent", {bg="none", italic = true, bold = true})
+	vim.api.nvim_set_hl(0, "MiniPickPrompt", {fg="#FFFFFF", bg="none", bold = true})
+	vim.api.nvim_set_hl(0, "MiniPickBorderText", {bg="none"})
+	vim.api.nvim_set_hl(0, "MiniPickBorderBusy", {bg="none"})
+	vim.api.nvim_set_hl(0, "MiniPickMatchCurrent", {fg="#FFFFFF", bold = true})
+	vim.api.nvim_set_hl(0, "MiniPickMatchRanges", {fg="#FFFFFF", bold = true})
+
+	vim.api.nvim_set_hl(0, "NormalFloat", {bg="none"})
+
+	vim.api.nvim_set_hl(0, "LineNr", {bg="none", bold = true, italic = true})
+	vim.api.nvim_set_hl(0, "LineNrAbove", {bg="none", bold = false})
+	vim.api.nvim_set_hl(0, "LineNrBelow", {bg="none", bold = false})
+
+	vim.api.nvim_set_hl(0, "StatusLine", {bg="none", fg="#FFFFFF"})
+	vim.api.nvim_set_hl(0, "StatusLineNC", {bg="none", fg="#504945"})
+
+	vim.api.nvim_set_hl(0, "SignColumn", {bg="none"})
+
+	vim.api.nvim_set_hl(0, "ColorColumn", {bg="#0A0A0A"})
 end
 
 Colour("fogbell")

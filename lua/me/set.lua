@@ -9,7 +9,8 @@ vim.opt.hlsearch = false
 
 vim.opt.nu = true
 vim.opt.rnu = true
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "100"
+vim.opt.signcolumn = "yes"
 
 vim.wo.wrap = false
 
@@ -21,3 +22,5 @@ vim.opt.listchars = {
 vim.opt.termguicolors = true
 
 vim.opt.shell = "bash"
+
+vim.opt.completeopt = { "menu", "menuone", "noselect" }

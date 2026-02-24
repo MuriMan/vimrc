@@ -1,3 +1,3 @@
 require("me.set")
-require("me.keymaps")
-require("me.packer");
+require("me.keymap")
+require("me.pack");
