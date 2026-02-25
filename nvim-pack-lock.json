@@ -8,6 +8,10 @@
       "rev": "5231c62aa83c2f8dc8e7ba957aa77098cda1257d",
       "src": "https://github.com/folke/lazydev.nvim"
     },
+    "lsp_signature.nvim": {
+      "rev": "0efb088dce050d38a3608ee69f80f2a62cf9849c",
+      "src": "https://github.com/ray-x/lsp_signature.nvim"
+    },
     "mini.pick": {
       "rev": "8521fe21df86e08d9e4b3c3f3a7d50e47954e1af",
       "src": "https://github.com/nvim-mini/mini.pick"

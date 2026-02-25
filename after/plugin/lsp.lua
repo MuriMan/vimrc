@@ -29,3 +29,17 @@ vim.lsp.config("ccls", {
 vim.lsp.enable({
 	"lua_ls", "csharp_ls", "ccls", "tinymist"
 })
+
+require('lsp_signature').setup({
+	bind = true, -- This is mandatory, otherwise border config won't get registered.
+	doc_lines = 0,
+	max_height = 4, -- max height of signature floating_window, include borders
+	max_width = function()
+		return math.floor(vim.api.nvim_win_get_width(0) * 0.8)
+	end,
+	handler_opts = {
+		border = "none"
+	},
+	hint_enable = true, -- show hint in virtual text
+	auto_close_after = 10, -- close after 10 seconds
+})
